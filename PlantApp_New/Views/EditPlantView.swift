@@ -107,7 +107,7 @@ struct EditPlantView: View {
                             .resizable()
                             .scaledToFit()
                     // if plant used "Set Photos" and used a CUSTOM IMAGE
-                    } else if imageSetNames.contains(currentPlant.plantImageString!) && inputImage != nil {
+                    } else if imageSetNames.contains(currentPlant.plantImageString ?? "UnknownPlant") && inputImage != nil {
                         loadedImage(with: currentPlant.imageData)
                             .resizable()
                             .scaledToFit()

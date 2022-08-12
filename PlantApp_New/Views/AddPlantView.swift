@@ -55,10 +55,8 @@ struct AddPlantView: View {
                                     
                                     if plant != "" {
                                         showSuggestionsList = true
-                                        print(plant.count)
                                     } else {
                                         showSuggestionsList = false
-                                        print("false")
                                     }
 
                                     plantImageString = trimmedAndLoweredText
